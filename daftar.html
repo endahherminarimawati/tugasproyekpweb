@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="asset/css/bootstrap/bootstrap.min.css">
+    <!-- MyStyle CSS -->
+    <link rel="stylesheet" href="asset/css/mystyle.css">
+    <!-- Font Awesome icon CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+    <!-- Jquery JS -->
+    <script src="asset/js/jquery.js"></script>
+    <!-- Ajax JS -->
+    <script src="asset/js/ajax.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="asset/js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="asset/js/my.js"></script>
+    
+
+    <title>Document</title> 
+</head>
+
+<body>
+    <!-- Menu Nav -->
+    <div class="menu-nav">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">        
+                <a class="navbar-brand" href="#">ENDAH HERMINARIMAWATI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                </button> 
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link" href="index.html">Profile</a>
+                            <a class="nav-item nav-link" href="kampus.html">Kampus</a>
+                            <a class="nav-item nav-link" href="#">Daftar</a>
+                            <a class="nav-item nav-link" href="tampildata.php">Tampil</a>
+                    </div>
+                </div>
+            </nav>   
+        </div>
+    </div>
+    <!-- Akhir Menu Nav -->
+    <h1 class="text-center">FORMULIR PENDAFTARAN <br>KHUSUS FAKULTAS TEKNOLOGI INDUSTRI</h1>
+    <br>  
+    <!-- Form data -->
+    <div class="container">
+        <form method="POST" action="simpandata.php" onsubmit="validasi()">
+            <!-- Nama -->
+            <div class="form-group">
+                <label>Nama</label>
+                <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukkan Nama">
+            </div>
+            <!-- Jenis Kelamin -->
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="kelamin" name="kelamin" value="Laki-Laki">
+                    <label class="form-check-label" for="exampleRadios1">
+                        Laki-Laki
+                    </label>  
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="kelamin" name="kelamin" value="Perempuan">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Perempuan
+                    </label>
+                </div>
+            </div>
+            <!-- Agama -->
+            <div class="form-group">
+                <label>Agama</label>
+                <select class="form-control" id="agama" name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                </select>
+            </div>
+            <!-- Alamat -->
+            <div class="form-group">
+                <label>Alamat</label>
+                <textarea class="form-control" id="alamat" name="alamat" rows="4"></textarea>
+            </div>
+            <!-- Jurusan 1 -->
+            <div class="form-group">
+                <label>Jurusan 1</label>
+                <select class="form-control" id="jurusan1" name="jurusan1">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Industri">Teknik Industri</option>
+                    <option value="Teknik Pangan">Teknik Pangan</option>
+                </select>
+            </div>
+            <!-- Jurusan 2 -->
+            <div class="form-group">
+                <label>Jurusan 2</label>
+                <select class="form-control" id="jurusan2" name="jurusan2">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Teknik Elektro">Teknik Elektro</option>
+                    <option value="Teknik Industri">Teknik Industri</option>
+                    <option value="Teknik Pangan">Teknik Pangan</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</body>
+</html>
